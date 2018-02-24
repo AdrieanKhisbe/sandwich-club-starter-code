@@ -13,59 +13,64 @@
         android:contentDescription="@string/sandwich_picture_content_description"
         android:scaleType="centerCrop" />
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginTop="200dp">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/detail_also_known_as_label"
-            android:textStyle="bold" />
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/also_known_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="Jambon Beurre"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_also_known_as_label"
+                android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/detail_place_of_origin_label"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/also_known_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Jambon Beurre" />
 
-        <TextView
-            android:id="@+id/origin_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="Somewhere in the south"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_place_of_origin_label"
+                android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/detail_ingredients_label"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/origin_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Somewhere in the south" />
 
-        <TextView
-            android:id="@+id/ingredients_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="Jambon, Beurre"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_ingredients_label"
+                android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/detail_description_label"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/ingredients_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Jambon, Beurre" />
 
-        <TextView
-            android:id="@+id/description_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="Du jambon, du pain, du beurre"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_description_label"
+                android:textStyle="bold" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/description_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Du jambon, du pain, du beurre" />
+
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>
